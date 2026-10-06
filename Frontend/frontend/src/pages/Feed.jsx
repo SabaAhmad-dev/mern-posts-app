@@ -1,6 +1,6 @@
 import {useState, useEffect}from 'react'
 import axios from "axios"
-
+import { Link } from 'react-router-dom'
 
 const API = import.meta.env.VITE_API_URL || 'http://localhost:3000'
 
@@ -15,6 +15,7 @@ const Feed = () => {
     axios.get(`${API}/posts`)
     .then((res)=>{
       setPosts(res.data.posts)
+      console.log(res.data.posts)
     })
   },[])
   const handleDelete = (id) => {
@@ -28,7 +29,9 @@ const Feed = () => {
     })}
   return (
     <div>
+        <Link className="link" to="/CreatePost"><span>Create Post</span></Link>
       <section className="feed-section">
+         
         {
           posts.length> 0?(
             posts.map((post)=>(

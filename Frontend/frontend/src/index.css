@@ -74,6 +74,7 @@ body,
   min-height: 100vh;
   padding: 30px 15px;
   background-color: #f0f2f5;
+  flex-wrap: wrap;
 }
 
 .post-card {
@@ -109,4 +110,22 @@ body,
 
 .post-card button:hover {
   background-color: #b71c1c;
+}
+
+.link{
+ padding: 200px;
+  background-color: #113364;
+  color: white;
+  padding: 40px 50px;
+  max-width: 220px;
+  font-size: 21px;
+  text-decoration: none;
+  text-align: center;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.link span{
+ 
 }

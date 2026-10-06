@@ -11,7 +11,7 @@ const CreatePost = () => {
     
     axios.post(`${API}/create-post`, formData)
      .then(()=>{
-         navigate("/feed")
+         navigate("/")
         })
      .catch((err)=>{
         console.log(err)

@@ -6,8 +6,9 @@ const App = () => {
    <>
   <Router>
    <Routes>
+        <Route path='/' element={<Feed/>} />
          <Route path='/CreatePost' element={<CreatePost/>} />
-         <Route path='/feed' element={<Feed/>} />
+       
    </Routes>
   </Router>
    </>
